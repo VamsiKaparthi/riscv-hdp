@@ -1,4 +1,3 @@
-# RISCV-HDP
 ## Week-0
 ### 1) Setup Virtual Machine
 1. Install [Oracle VM Virtual Box](https://www.virtualbox.org/wiki/Downloads).
