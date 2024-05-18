@@ -8,3 +8,6 @@
     - Base Memory: 4096 MB 
     - Processors: 4
     - Hard disk file: Use existing (Select the installed vdi file) 
+### 2) Explore Codes
+1. [Matrix Multiplication](https://godbolt.org/z/fMoY1xWxz)
+2. [Counter]()
