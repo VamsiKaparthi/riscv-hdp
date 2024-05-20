@@ -28,6 +28,8 @@
   - vvp executes the compiled simulation file.
   - Gtkwave is used to view the simulation.
 ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/4033ddd8-9850-44f8-80e6-43c88d9b07c1)
+5. Resultant waveform:
+![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/adb0f3a9-6b3e-48ce-98ac-037316d59a40)
 
 
 
