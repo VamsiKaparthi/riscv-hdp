@@ -1,7 +1,7 @@
 module alu(input[3:0]a,input[3:0]b,input[2:0]sel, output reg[3:0] out);
 
 always@(*) begin
-	case(sel[1:0])
+	case(sel[2:0])
 	    3'b000:out=0;
             3'b001:out=a+b;
             3'b010:out=a-b;
