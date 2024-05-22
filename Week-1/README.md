@@ -20,7 +20,7 @@
 1. Create 2 .v files alu.v and alu_tb.v.
 ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/1fac64b0-d274-46a6-8c60-881c5d7c3b8c)
 2. Write the 4-bit ALU code in alu.v using text editor. This will be our Design Under Test (DUT).
-![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/7675c1af-6d8c-4c24-8cc4-29886e61e63f)
+![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/237bf892-6dfd-4a70-bd76-806dd306effc)
 3. Write the testbench in alu_tb.v using text editor. This will consist of all the tests to test our DUT.
 ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/1b78735d-d45e-4b68-94ec-424dbf34c5ee)
 4. Run the following commands to
