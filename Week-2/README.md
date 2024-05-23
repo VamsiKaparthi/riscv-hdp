@@ -31,30 +31,30 @@
       addi - 7 cycles
       beqz - 2 cycles
       j - 5 cycles
-ret - 3 cycles
-lw - 8 cycles
-add - 6 cycles
-li - 1 cycle
-jal - 9 cycles
-mv - 3 cycles
-sw - 7 cycles
-sub - 4 cycles
-sb - 5 cycles
-jr - 2 cycles
-nop - 8 cycles
-andi - 6 cycles
-bnez - 9 cycles
-bltu - 1 cycle
-bne - 2 cycles
-srai - 3 cycles
-slli - 7 cycles
-jalr - 4 cycles
-or - 5 cycles
-sll - 6 cycles 
-sltu - 5 cycles 
-beq - 1 cycle 
-blt - 1 cycle 
-bge - 1 cycle 
+      ret - 3 cycles
+      lw - 8 cycles
+      add - 6 cycles
+      li - 1 cycle
+      jal - 9 cycles
+      mv - 3 cycles
+      sw - 7 cycles
+      sub - 4 cycles
+      sb - 5 cycles
+      jr - 2 cycles
+      nop - 8 cycles
+      andi - 6 cycles
+      bnez - 9 cycles
+      bltu - 1 cycle
+      bne - 2 cycles
+      srai - 3 cycles
+      slli - 7 cycles
+      jalr - 4 cycles
+      or - 5 cycles
+      sll - 6 cycles
+      sltu - 5 cycles
+      beq - 1 cycle
+      blt - 1 cycle
+      bge - 1 cycle
 Use these assummed values for calculating total number of clock cycles. Also assume 1ps as 1 clock cycle time.
 1. Matrix Multiplication
     - Total Clock Cycle: 1318 cycles
