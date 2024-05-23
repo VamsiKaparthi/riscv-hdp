@@ -57,7 +57,7 @@
       bge - 1 cycle
 Use these assummed values for calculating total number of clock cycles. Also assume 1ps as 1 clock cycle time.
 1. Matrix Multiplication
-    - Total Clock Cycle: 1318 cycles
+    - Total Clock Cycles: 1318 cycles
     - Total CPU time: 1318ps
 2. Counter
     - Total Clock Cycles: 1637 cycles
