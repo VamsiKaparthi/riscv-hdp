@@ -13,9 +13,9 @@
   - Counter
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
 4. To convert the c files into assembly format:
-  a) Comment out 'printf' and '#include<stdio.h>'.
-  - mat.c
+  - Comment out 'printf' and '#include<stdio.h>'.
+   mat.c
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/995e80c0-ded8-466a-99b0-d34874e584dc)
-  - counter.c
+   counter.c
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
 
