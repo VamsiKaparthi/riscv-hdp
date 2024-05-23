@@ -12,10 +12,18 @@
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/36815f9e-1bfd-4f43-b75d-2b528b5ec86b)
   - Counter
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
-4. To convert the c files into assembly format:
-  - Comment out 'printf' and '#include<stdio.h>'.
-   mat.c
+4. Comment out 'printf' and '#include<stdio.h>'.
+   - mat.c
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/995e80c0-ded8-466a-99b0-d34874e584dc)
-   counter.c
+   - counter.c
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
+5.Run the following commands to generate the assembly files.
+![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0ecc4f92-2019-411d-bae9-d10d1f6c0dd4)
+6. The generated assembly files for:
+  - mat.c
+    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/7dcccad5-6a63-4656-a02b-2f44d5237214)
+  - counter.c
+    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/3733d2b9-1df7-4e38-9e04-a3a368d0fb24)
+
+
 
