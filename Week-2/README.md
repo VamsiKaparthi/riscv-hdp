@@ -15,21 +15,37 @@
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/267eea30-d7fd-495b-bcd2-536a6aba6f0f)
    
 4. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
+   
    - Matrix Multiplication
+     
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/36815f9e-1bfd-4f43-b75d-2b528b5ec86b)
+   
    - Counter
+     
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
-5. Comment out 'printf' and '#include<stdio.h>'.
+   
+6. Comment out 'printf' and '#include<stdio.h>'.
+   
    - mat.c
+     
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/995e80c0-ded8-466a-99b0-d34874e584dc)
+   
    - counter.c
+     
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
+   
 5.Run the following commands to generate the assembly files.
+
 ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0ecc4f92-2019-411d-bae9-d10d1f6c0dd4)
-6. The generated assembly files for:
+
+8. The generated assembly files for:
+   
    - mat.c
+     
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/7dcccad5-6a63-4656-a02b-2f44d5237214)
+   
    - counter.c
+     
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/3733d2b9-1df7-4e38-9e04-a3a368d0fb24)
 
 
@@ -62,10 +78,10 @@
       beq - 1 cycle
       blt - 1 cycle
       bge - 1 cycle
-Use these assummed values for calculating total number of clock cycles. Also assume 1ps as 1 clock cycle time.
+Use these assummed values for calculating total number of clock cycles. Assume clock frequency to be 2.3GHz. Clock cycle time = 1/(Clock frequency) = 0.43ns.
 1. Matrix Multiplication
     - Total Clock Cycles: 1318 cycles
-    - Total CPU time: 1318ps
+    - Total CPU time: 1318 x 0.43ns = 566.74ns
 2. Counter
     - Total Clock Cycles: 1637 cycles
-    - Total CPU time: 1637ps
+    - Total CPU time: 1637 x 0.43ns = 703.91ns
