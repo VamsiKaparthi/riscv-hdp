@@ -16,21 +16,21 @@
    
 3. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
    
-   - Matrix Multiplication
+   - **Matrix Multiplication**
      
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/36815f9e-1bfd-4f43-b75d-2b528b5ec86b)
    
-   - Counter
+   - **Counter**
      
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
    
 4. Comment out 'printf' and '#include<stdio.h>'.
    
-   - mat.c
+   - **mat.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/995e80c0-ded8-466a-99b0-d34874e584dc)
    
-   - counter.c
+   - **counter.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
    
@@ -40,16 +40,16 @@
 
 6. The generated assembly files for:
    
-   - mat.c
+   - **mat.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/7dcccad5-6a63-4656-a02b-2f44d5237214)
    
-   - counter.c
+   - **counter.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/3733d2b9-1df7-4e38-9e04-a3a368d0fb24)
 
 
-### 2) Calculate CPU performance of:
+### 2) Calculate CPU performance of the above programs.
       auipc - 4 cycles
       addi - 7 cycles
       beqz - 2 cycles
@@ -78,10 +78,12 @@
       beq - 1 cycle
       blt - 1 cycle
       bge - 1 cycle
-Use these assummed values for calculating total number of clock cycles. Assume clock frequency to be 2.3GHz. Clock cycle time = 1/(Clock frequency) = 0.43ns.
-1. Matrix Multiplication
+Use these assummed values for calculating total number of clock cycles.
+Assume clock frequency to be 2.3GHz. Clock cycle time = 1/(Clock frequency) = 0.43ns.
+
+1. **Matrix Multiplication**
     - Total Clock Cycles: 1318 cycles
     - Total CPU time: 1318 x 0.43ns = 566.74ns
-2. Counter
+2. **Counter**
     - Total Clock Cycles: 1637 cycles
     - Total CPU time: 1637 x 0.43ns = 703.91ns
