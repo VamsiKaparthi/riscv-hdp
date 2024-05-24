@@ -14,7 +14,7 @@
      
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/267eea30-d7fd-495b-bcd2-536a6aba6f0f)
    
-4. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
+3. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
    
    - Matrix Multiplication
      
@@ -24,7 +24,7 @@
      
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
    
-6. Comment out 'printf' and '#include<stdio.h>'.
+4. Comment out 'printf' and '#include<stdio.h>'.
    
    - mat.c
      
@@ -36,9 +36,9 @@
    
 5.Run the following commands to generate the assembly files.
 
-![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0ecc4f92-2019-411d-bae9-d10d1f6c0dd4)
+   ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0ecc4f92-2019-411d-bae9-d10d1f6c0dd4)
 
-8. The generated assembly files for:
+6. The generated assembly files for:
    
    - mat.c
      
