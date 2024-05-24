@@ -14,7 +14,7 @@
      
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/267eea30-d7fd-495b-bcd2-536a6aba6f0f)
 
-   = **ALU**
+   - **ALU**
    
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/2f80b872-780f-483e-aa3f-e764d7df104c)
 
@@ -29,7 +29,8 @@
    
    - **Counter**
      
-      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/b33eca51-5763-4c2e-b581-3324d9e0b5e1)
+
 
    - **ALU**
 
@@ -46,7 +47,7 @@
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
 
-   - ""alu.c""
+   - **alu.c**
 
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/d3a9917e-e022-42e7-9b64-4f32c9ed49a6)
      
