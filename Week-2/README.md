@@ -13,8 +13,15 @@
    - **Counter**
      
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/267eea30-d7fd-495b-bcd2-536a6aba6f0f)
+
+   = **ALU**
    
-3. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/2f80b872-780f-483e-aa3f-e764d7df104c)
+
+
+      
+   
+4. Generate spike output (Run the c program using RISC-V compiler). Observe and verify the output.
    
    - **Matrix Multiplication**
      
@@ -23,8 +30,13 @@
    - **Counter**
      
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/60001512-088a-435c-bc78-19ffd8040117)
+
+   - **ALU**
+
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0554134a-2baa-4b24-916b-dd249e659fab)
+
    
-4. Comment out 'printf' and '#include<stdio.h>'.
+5. Comment out 'printf' and '#include<stdio.h>'.
    
    - **mat.c**
      
@@ -33,7 +45,12 @@
    - **counter.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/90f3289f-c56e-419c-a10d-42c7dc4b5721)
-   
+
+   - ""alu.c""
+
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/d3a9917e-e022-42e7-9b64-4f32c9ed49a6)
+     
+
 5.Run the following commands to generate the assembly files.
    
    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0ecc4f92-2019-411d-bae9-d10d1f6c0dd4)
@@ -47,6 +64,11 @@
    - **counter.c**
      
        ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/3733d2b9-1df7-4e38-9e04-a3a368d0fb24)
+
+   - **alu.c**
+  
+       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/b620ca16-baef-4724-b6aa-ed73668db788)
+
 
 
 ### 2) Calculate CPU performance of the above programs.
