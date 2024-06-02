@@ -12,6 +12,10 @@
     
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/e553220d-5a54-4cc0-bdf4-57d0c0b5e0a1)
 
+  - x30[0] is the input pin where the sensor value is recieved.
+  - x30[1] is the output pin which will drive the buzzer.
+  - x30[8:11] are the ouput pins which will control the motor control which in turn will control the motors.
+
 
 
 
