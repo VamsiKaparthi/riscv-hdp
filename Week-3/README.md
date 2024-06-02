@@ -7,5 +7,11 @@
 
       ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0b90af66-30d3-4945-a48b-c8ed7b165705)
 
+### I/O Mapping
+  - GPIO mapping:
+    
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/e553220d-5a54-4cc0-bdf4-57d0c0b5e0a1)
+
+
 
 
