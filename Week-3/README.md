@@ -5,7 +5,8 @@
   - It drives a combination of 4 motors (using a motor control) and a buzzer as output.
   - Block Diagram:
 
-      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/0b90af66-30d3-4945-a48b-c8ed7b165705)
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/b14e6a10-8823-4c69-a4cc-cd68ce3a026e)
+
 
 ### I/O Mapping
   - GPIO mapping:
