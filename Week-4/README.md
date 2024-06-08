@@ -107,7 +107,7 @@ Application code is as follows:
         //convert to hexadecimal
         decimalToHex(value,hexNumber);
         if(compareHexStrings(hexNumber,"FFFFFFFF")){ //forward //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
-	    writeState(1,0xFFFFFEFF,8);
+	     writeState(1,0xFFFFFEFF,8);
 	    writeState(0,0xFFFFFDFF,9);
 	    writeState(1,0xFFFFFBFF,10);
 	    writeState(1,0xFFFFF7FF,11);
