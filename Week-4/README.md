@@ -31,17 +31,17 @@ Application code is as follows:
         int temp;
         int i=0;
     	while(decNumber!=0){
-	    temp=decNumber%16;
-	    if(temp<10){
-	       temp=temp+48;
-            }
-	    else{
-               temp=temp+55;
-            }
-	    hexNumber[i++]=temp;
-	    decNumber=decNumber/16;
-       }
-    }
+		temp=decNumber%16;
+	    	if(temp<10){
+	       		temp=temp+48;
+            	}
+	    	else{
+               		temp=temp+55;
+            	}
+	    	hexNumber[i++]=temp;
+	    	decNumber=decNumber/16;
+        }
+    	}
 
     int compareHexStrings(const char* str1, const char* str2) {
         while (*str1 && *str2) {
