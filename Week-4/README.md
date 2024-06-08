@@ -8,5 +8,6 @@ Logic is represented as follows:
     Total time taken to represent is 1.12ms.
     
 Protocol is as follows:
-  ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/a42e843f-a883-415b-ad14-75bcf6ee9520)
+
+  - ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/a42e843f-a883-415b-ad14-75bcf6ee9520)
 
