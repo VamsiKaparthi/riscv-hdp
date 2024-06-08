@@ -107,44 +107,44 @@ Application code is as follows:
         //convert to hexadecimal
         decimalToHex(value,hexNumber);
         if(compareHexStrings(hexNumber,"FFFFFFFF")){ //forward //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
-	     writeState(1,0xFFFFFEFF,8);
-	    writeState(0,0xFFFFFDFF,9);
-	    writeState(1,0xFFFFFBFF,10);
-	    writeState(1,0xFFFFF7FF,11);
+		writeState(1,0xFFFFFEFF,8);
+	    	writeState(0,0xFFFFFDFF,9);
+	    	writeState(1,0xFFFFFBFF,10);
+	    	writeState(1,0xFFFFF7FF,11);
         }
         else if(compareHexStrings(hexNumber,"FFFFFFFE")){ //reverse //8th(dir1) and 9th 
     bit(dir2) for direction // 10th(right) and 11th(left) for speed
-	    writeState(0,0xFFFFFEFF,8);
-	    writeState(1,0xFFFFFDFF,9);
-	    writeState(1,0xFFFFFBFF,10);
-	    writeState(1,0xFFFFF7FF,11);
+	    	writeState(0,0xFFFFFEFF,8);
+	    	writeState(1,0xFFFFFDFF,9);
+	    	writeState(1,0xFFFFFBFF,10);
+	    	writeState(1,0xFFFFF7FF,11);
         }
         else if(compareHexStrings(hexNumber,"FFFFFFFD")){ //left //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
-	    writeState(1,0xFFFFFEFF,8);
-	    writeState(0,0xFFFFFDFF,9);
-	    writeState(1,0xFFFFFBFF,10);
-	    writeState(0,0xFFFFF7FF,11);
+	    	writeState(1,0xFFFFFEFF,8);
+	    	writeState(0,0xFFFFFDFF,9);
+	    	writeState(1,0xFFFFFBFF,10);
+	    	writeState(0,0xFFFFF7FF,11);
         }
         else if(compareHexStrings(hexNumber,"FFFFFFFC")){ //right //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
-	     writeState(1,0xFFFFFEFF,8);
-	     writeState(0,0xFFFFFDFF,9);
-	     writeState(0,0xFFFFFBFF,10);
-	     writeState(1,0xFFFFF7FF,11);
+	     	writeState(1,0xFFFFFEFF,8);
+	     	writeState(0,0xFFFFFDFF,9);
+	     	writeState(0,0xFFFFFBFF,10);
+	    	writeState(1,0xFFFFF7FF,11);
          }
          else{
-	     writeState(0,0xFFFFFEFF,8);
-	     writeState(0,0xFFFFFDFF,9);
-	     writeState(0,0xFFFFFBFF,10);
-	     writeState(0,0xFFFFF7FF,11);
+	     	writeState(0,0xFFFFFEFF,8);
+	    	writeState(0,0xFFFFFDFF,9);
+	     	writeState(0,0xFFFFFBFF,10);
+	     	writeState(0,0xFFFFF7FF,11);
          }
     }
     int main(){
         int data;
         while(1){
-	    while(readState()){
-	    }
-	    data = recieveData();
-	    drive(data);
+		while(readState()){
+	    	}
+	    	data = recieveData();
+	    	drive(data);
         }
     }
 
