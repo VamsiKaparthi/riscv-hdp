@@ -27,21 +27,40 @@ Application code is as follows:
         return var;
     };
 
-    void decimalToHex(int decNumber,char hexNumber[]){
-        int temp;
-        int i=0;
-    	while(decNumber!=0){
-		temp=decNumber%16;
-	    	if(temp<10){
-	       		temp=temp+48;
+    void decimalToHex(unsigned int decNumber, char hexNumber[]) {
+    	int i = 0;
+    
+    	// Special case for zero
+    	if (decNumber == 0) {
+        	hexNumber[i++] = '0';
+    	} 
+     	else {
+        // Convert decimal to hexadecimal
+        	while (decNumber != 0) {
+            	int temp = decNumber % 16;
+            	if (temp < 10) {
+                	hexNumber[i++] = temp + '0'; // Convert to ASCII '0'-'9'
+            	} 
+	     	else {
+                	hexNumber[i++] = temp + 'A' - 10; // Convert to ASCII 'A'-'F'
             	}
-	    	else{
-               		temp=temp+55;
-            	}
-	    	hexNumber[i++]=temp;
-	    	decNumber=decNumber/16;
-        }
+            	decNumber = decNumber / 16;
+        	}
     	}
+
+    	hexNumber[i] = '\0'; // Null-terminate the string
+
+    	// Reverse the array to get left-to-right order
+    	int start = 0;
+    	int end = i - 1;
+    	while (start < end) {
+        	char temp = hexNumber[start];
+        	hexNumber[start] = hexNumber[end];
+        	hexNumber[end] = temp;
+        	start++;
+        	end--;
+    	}
+	}
 
     int compareHexStrings(const char* str1, const char* str2) {
         while (*str1 && *str2) {
@@ -137,14 +156,18 @@ Application code is as follows:
 	     	writeState(0,0xFFFFFBFF,10);
 	     	writeState(0,0xFFFFF7FF,11);
          }
+	 return 0;
     }
     int main(){
-        int data;
+        unsigned int data;
         while(1){
 		while(readState()){
 	    	}
 	    	data = recieveData();
 	    	drive(data);
+      		//avoid infinite loop
+		while(getchar()!='\n');
+  		continue;
         }
     }
 
