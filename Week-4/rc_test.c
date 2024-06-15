@@ -12,6 +12,7 @@ int readState(){
     return var;
 };
 
+
 void decimalToHex(unsigned int decNumber, char hexNumber[]) {
     int i = 0;
     
@@ -104,51 +105,68 @@ void writeState(int GPIO_state, int mask, int bit_position){
     );
 }
 
-int drive(int value){
+int drive(unsigned int value){
     char hexNumber[9];
     //convert to hexadecimal
     decimalToHex(value,hexNumber);
     if(compareHexStrings(hexNumber,"FFFFFFFF")){ //forward //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
 	writeState(1,0xFFFFFEFF,8);
 	writeState(0,0xFFFFFDFF,9);
+	printf("Setting direction clockwise\n");
 	writeState(1,0xFFFFFBFF,10);
 	writeState(1,0xFFFFF7FF,11);
+	printf("Turning both right and left motors ON\n");
+	printf("Moving Forward\n");
+	
     }
     else if(compareHexStrings(hexNumber,"FFFFFFFE")){ //reverse //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
 	writeState(0,0xFFFFFEFF,8);
 	writeState(1,0xFFFFFDFF,9);
+	printf("Setting direction anti clockwise\n");
 	writeState(1,0xFFFFFBFF,10);
 	writeState(1,0xFFFFF7FF,11);
+	printf("Turning both right and left motors OFF\n");
+	printf("Moving Reverse\n");
+	
     }
     else if(compareHexStrings(hexNumber,"FFFFFFFD")){ //left //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
 	writeState(1,0xFFFFFEFF,8);
 	writeState(0,0xFFFFFDFF,9);
 	writeState(1,0xFFFFFBFF,10);
 	writeState(0,0xFFFFF7FF,11);
+	printf("Turning right motor ON\n");
+	printf("Moving Left\n");
+	
     }
     else if(compareHexStrings(hexNumber,"FFFFFFFC")){ //right //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed
 	writeState(1,0xFFFFFEFF,8);
 	writeState(0,0xFFFFFDFF,9);
 	writeState(0,0xFFFFFBFF,10);
 	writeState(1,0xFFFFF7FF,11);
+	printf("Turning left motor ON\n");
+	printf("Moving Right\n");
+	
     }
     else{
 	writeState(0,0xFFFFFEFF,8);
 	writeState(0,0xFFFFFDFF,9);
 	writeState(0,0xFFFFFBFF,10);
 	writeState(0,0xFFFFF7FF,11);
+	printf("Invalid signal\n");
+	
     }
-    return 0;
+     return 0;
 }
 int main(){
-    unsigned int data;
+    int test;
     while(1){
-	while(readState()){
-	}
-	data = recieveData();
-	drive(data);
-	//avoid infinite loop
-	while(getchar()!='\n');
+	//while(readState()){
+	//}
+	printf("Enter test recieved decimal value : ");
+	scanf("%d",&test);
+	drive(test);
+	//Avoid infinite loop
+	while (getchar() != '\n');
 	continue;
     }
 }
