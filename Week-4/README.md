@@ -345,3 +345,16 @@ Application test code (rc_test.c) is as follows:
 		continue;
     	}
     }
+
+
+Testing with spike simulator : 
+
+   - rc.c (checking for compilation errors in main application code)
+     
+     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/b27305f9-562c-48ac-a277-52f535c6f294)
+     
+   - rc_test.c (checking whether program behaves as expected)
+
+     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/d2e334a8-bb82-4d5a-804e-a428b4c3e1c7)
+
+
