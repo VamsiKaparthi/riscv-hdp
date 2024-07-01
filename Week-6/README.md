@@ -33,9 +33,13 @@
 
    - Input : 011
 
-     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/15ce8c33-5aae-49ad-b1b8-f7f9b0f069e3)
+     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/524db40f-bd39-45aa-b084-fc7e6d546b4f)
 
-   - Input : 
+
+   - Input : 110
+
+     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/ba3a101e-d228-4851-b5d5-501af9300609)
+
 
 
 
