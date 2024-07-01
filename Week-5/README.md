@@ -1,6 +1,10 @@
 ## Week-5
 
   - Generate an assembly file (ir_assembly.txt) from ir_real.c.
+    ```
+        riscv64-unknown-elf-gcc -march=rv32im -mabi=ilp32 -ffreestanding -nostdlib -o ./ir ir_real.c
+        riscv64-unknown-elf-objdump -d -r ir>ir_assembly.txt
+    ```
   - Note the unique instructions present in the assembly file.
     
     ```
