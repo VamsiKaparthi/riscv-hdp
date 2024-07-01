@@ -22,3 +22,4 @@
     16. nop
     ```
   - Modify the processor.json file accordingly.
+  - Upload processor.json and ir_assembly.txt to [chipcron tool](http://16.16.202.21) to generate processor.v and testbench.v files.
