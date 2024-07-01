@@ -21,4 +21,4 @@
     15. or
     16. nop
     ```
-
+  - Modify the processor.json file accordingly.
