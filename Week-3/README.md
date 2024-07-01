@@ -5,7 +5,8 @@
   - It drives a combination of 2 motors (using a motor control) as output.
   - Block Diagram:
 
-      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/4a0ac516-f92e-41a7-8a86-ff38272e6935)
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/2550d370-f4f5-4cab-8f0f-8859c8a8178f)
+
 
 
 
