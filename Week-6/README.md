@@ -21,6 +21,13 @@
 
 ### Verify in gtkwave
 
+   - Commands to generate and view waveform
+     ```
+        iverilog -o wave processor.v testbench.v
+        vvp wave
+        gtkwave waveform.vcd
+     ```
+
    - You might notice a diffrent output when the input is intially changed. This is due to the fact that write state has to run 4 times to write to all the output gpio pins before the correct output is shown (which takes time) . Thats why by the end the correct output is displayed.
 
    - Input : 001
