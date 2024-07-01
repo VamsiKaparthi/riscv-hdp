@@ -14,11 +14,11 @@
 ### I/O Mapping
   - GPIO mapping:
     
-      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/e553220d-5a54-4cc0-bdf4-57d0c0b5e0a1)
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/f8cf7732-f744-4f68-bf54-692686391ae2)
 
-  - x30[0] is the input pin where the sensor value is recieved.
-  - x30[1] is the output pin which will drive the buzzer.
-  - x30[8:11] are the ouput pins which will control the motor control which in turn will control the motors.
+
+  - x30[2:0] are the input gpio pins where the sensor value is recieved.
+  - x30[11:8] are the ouput gpio pins which will control the motor control which in turn will control the motors.
 
 
 
