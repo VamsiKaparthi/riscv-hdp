@@ -2,10 +2,11 @@
 ### Architecture of IOT application
   - The application is a **IR based Remote Controlled car**. 
   - It takes an input from IR sensor.
-  - It drives a combination of 4 motors (using a motor control) and a buzzer as output.
+  - It drives a combination of 2 motors (using a motor control) as output.
   - Block Diagram:
 
-      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/b14e6a10-8823-4c69-a4cc-cd68ce3a026e)
+      ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/6434415b-b4cf-40f6-bc38-2510307d25ae)
+
 
 
 ### I/O Mapping
