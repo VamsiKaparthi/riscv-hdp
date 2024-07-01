@@ -21,4 +21,9 @@
 
 ### Verify in gtkwave
 
+   - You might notice a diffrent output when the input is intially changed. This is due to the fact that write state has to run 4 times to write to all the output gpio pins before the correct output is shown (which takes time) . Thats why by the end the correct output is displayed.
+
+   - Input : 001
+
+     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/ac8eb15b-b091-49b8-95a7-9454f29d80e8)
 
