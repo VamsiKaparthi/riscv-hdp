@@ -6,3 +6,7 @@
 
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/bbb90e53-565a-495a-8431-80802b7f3e0a)
 
+  - Modify testbench.v according to the gpio architecture.
+
+    ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/1a1051cb-c221-4232-9fdb-5e874c1a7527)
+
