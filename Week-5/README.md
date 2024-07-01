@@ -2,6 +2,7 @@
 
   - Generate an assembly file (ir_assembly.txt) from ir_real.c.
   - Note the unique instructions present in the assembly file.
+    
     ```
     1. addi
     2. sw
