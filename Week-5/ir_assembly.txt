@@ -91,12 +91,12 @@ Disassembly of section .text:
    101a0:	120000ef          	jal	ra,102c0 <writeState>
    101a4:	00a00613          	li	a2,10
    101a8:	bff00593          	li	a1,-1025
-   101ac:	00000513          	li	a0,0
+   101ac:	00100513          	li	a0,1
    101b0:	110000ef          	jal	ra,102c0 <writeState>
    101b4:	00b00613          	li	a2,11
    101b8:	fffff7b7          	lui	a5,0xfffff
    101bc:	7ff78593          	addi	a1,a5,2047 # fffff7ff <__global_pointer$+0xfffedcf7>
-   101c0:	00100513          	li	a0,1
+   101c0:	00000513          	li	a0,0
    101c4:	0fc000ef          	jal	ra,102c0 <writeState>
    101c8:	0c00006f          	j	10288 <main+0x234>
    101cc:	00200513          	li	a0,2

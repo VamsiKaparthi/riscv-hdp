@@ -24,8 +24,8 @@ int main(){
     	else if(!readState(2)&&readState(1)&&readState(0)){ //left //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed (011)
 		writeState(1,0xFFFFFEFF,8);
 		writeState(0,0xFFFFFDFF,9);
-		writeState(0,0xFFFFFBFF,10);
-		writeState(1,0xFFFFF7FF,11);
+		writeState(1,0xFFFFFBFF,10);
+		writeState(0,0xFFFFF7FF,11);
     	}
     	else if(readState(2)&&readState(1)&&!readState(0)){ //right //8th(dir1) and 9th bit(dir2) for direction // 10th(right) and 11th(left) for speed (110)
 		writeState(1,0xFFFFFEFF,8);

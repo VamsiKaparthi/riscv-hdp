@@ -113,7 +113,7 @@ begin
     $dumpvars(0,tb);
 end 
 
-reg [2:0] input_wires; 
+reg [3:0] input_wires; 
 wire [3:0] output_wires ; 
 wire [2:0] pc ; 
 
@@ -137,12 +137,12 @@ initial begin
     rst_pin = 0 ; 
     
     input_wires = 3'b001;
-    
-    #12000
-    input_wires = 3'b010;
 
-    #12000
+    #12000	    
+    input_wires = 3'b010;
     
+    #12000
+
     input_wires = 3'b011;
 
     #12000
@@ -242,12 +242,12 @@ initial begin
     @(posedge slow_clk);write_instruction(32'h120000ef); 
     @(posedge slow_clk);write_instruction(32'h00a00613); 
     @(posedge slow_clk);write_instruction(32'hbff00593); 
-    @(posedge slow_clk);write_instruction(32'h00000513); 
+    @(posedge slow_clk);write_instruction(32'h00100513); 
     @(posedge slow_clk);write_instruction(32'h110000ef); 
     @(posedge slow_clk);write_instruction(32'h00b00613); 
     @(posedge slow_clk);write_instruction(32'hfffff7b7); 
     @(posedge slow_clk);write_instruction(32'h7ff78593); 
-    @(posedge slow_clk);write_instruction(32'h00100513); 
+    @(posedge slow_clk);write_instruction(32'h00000513); 
     @(posedge slow_clk);write_instruction(32'h0fc000ef); 
     @(posedge slow_clk);write_instruction(32'h0c00006f); 
     @(posedge slow_clk);write_instruction(32'h00200513); 

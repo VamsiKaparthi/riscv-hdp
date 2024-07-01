@@ -226,12 +226,12 @@ initial begin
     @(posedge slow_clk);write_instruction(32'h120000ef); 
     @(posedge slow_clk);write_instruction(32'h00a00613); 
     @(posedge slow_clk);write_instruction(32'hbff00593); 
-    @(posedge slow_clk);write_instruction(32'h00000513); 
+    @(posedge slow_clk);write_instruction(32'h00100513); 
     @(posedge slow_clk);write_instruction(32'h110000ef); 
     @(posedge slow_clk);write_instruction(32'h00b00613); 
     @(posedge slow_clk);write_instruction(32'hfffff7b7); 
     @(posedge slow_clk);write_instruction(32'h7ff78593); 
-    @(posedge slow_clk);write_instruction(32'h00100513); 
+    @(posedge slow_clk);write_instruction(32'h00000513); 
     @(posedge slow_clk);write_instruction(32'h0fc000ef); 
     @(posedge slow_clk);write_instruction(32'h0c00006f); 
     @(posedge slow_clk);write_instruction(32'h00200513); 

@@ -6395,12 +6395,12 @@ endmodule
 	mem[85] = 32'h120000ef;
 	mem[86] = 32'h00a00613;
 	mem[87] = 32'hbff00593;
-	mem[88] = 32'h00000513;
+	mem[88] = 32'h00100513;
 	mem[89] = 32'h110000ef;
 	mem[90] = 32'h00b00613;
 	mem[91] = 32'hfffff7b7;
 	mem[92] = 32'h7ff78593;
-	mem[93] = 32'h00100513;
+	mem[93] = 32'h00000513;
 	mem[94] = 32'h0fc000ef;
 	mem[95] = 32'h0c00006f;
 	mem[96] = 32'h00200513;
@@ -7064,7 +7064,7 @@ endmodule
 
     always @(posedge clk) 
     begin
-    output_pins = {24'b0, top_gpio_pins[11:8], 5'b0, input_gpio_pins[2:0]} ; 
+    output_pins = {20'b0, top_gpio_pins[11:8], 5'b0,  input_gpio_pins[2:0]} ; 
     output_gpio_pins = top_gpio_pins[11:8]; 
     write_done = writing_inst_done ; 
     instructions = write_inst_count[2:0]; 
