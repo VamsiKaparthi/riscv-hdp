@@ -10,7 +10,7 @@
 
     ![image](https://github.com/VamsiKaparthi/riscv-hdp/assets/89274263/a672c72c-0d82-4994-a4f5-87a133b9e2fb)
 
-  - Comment out all the @(posedge slow_clk);write_instruction(x); to bypass the UART
+  - Comment out all the @(posedge slow_clk);write_instruction(x); to bypass the UART. 
     
   - Provide the testcases in testbench.v.
 
